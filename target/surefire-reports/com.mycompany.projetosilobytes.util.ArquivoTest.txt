@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.mycompany.projetosilobytes.util.ArquivoTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec <<< FAILURE!
+com.mycompany.projetosilobytes.util.ArquivoTest.testInserir()  Time elapsed: 0.008 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.mycompany.projetosilobytes.util.Arquivo.listar(Arquivo.java:54)
+	at com.mycompany.projetosilobytes.util.Arquivo.inserir(Arquivo.java:26)
+	at com.mycompany.projetosilobytes.util.ArquivoTest.testInserir(ArquivoTest.java:41)
+
