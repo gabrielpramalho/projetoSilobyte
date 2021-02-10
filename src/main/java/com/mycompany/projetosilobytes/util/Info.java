@@ -7,5 +7,5 @@ package com.mycompany.projetosilobytes.util;
 
 
 public class Info {
-    public static final String ARQUIVO_USUARIO = "C:\\projetoProg\\usuario.dat";
+    public static final String ARQUIVO_USUARIO = "C:\\projetoProg\\arquivo.dat";
 }

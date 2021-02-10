@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="1" name="com.mycompany.projetosilobytes.util.ArquivoTest" time="0.008" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="com.mycompany.projetosilobytes.util.ArquivoTest" time="0.061" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_111\jre\bin"/>
@@ -65,13 +65,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.mycompany.projetosilobytes.util.ArquivoTest" name="com.mycompany.projetosilobytes.util.ArquivoTest.testInserir" time="0.008">
-    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
-	at com.mycompany.projetosilobytes.util.Arquivo.listar(Arquivo.java:54)
-	at com.mycompany.projetosilobytes.util.Arquivo.inserir(Arquivo.java:26)
-	at com.mycompany.projetosilobytes.util.ArquivoTest.testInserir(ArquivoTest.java:41)
-</failure>
-    <system-out>Arquivo não encontrado
-</system-out>
-  </testcase>
+  <testcase classname="com.mycompany.projetosilobytes.util.ArquivoTest" name="com.mycompany.projetosilobytes.util.ArquivoTest.testListar" time="0.061"/>
 </testsuite>
