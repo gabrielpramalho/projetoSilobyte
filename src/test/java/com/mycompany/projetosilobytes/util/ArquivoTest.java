@@ -42,15 +42,15 @@ public class ArquivoTest {
 //        Arquivo.inserir(u);
 //    }
     
-    @org.junit.jupiter.api.Test
-    public void testListar(){
-        ArrayList<Usuario> lista = Arquivo.listar();
-        for(Usuario u : lista){
-            System.out.println("login: "+u.getLogin());
-            System.out.println("nome: "+u.getName());
-            System.out.println("senha: "+u.getPassword());
-            System.out.println(" ");
-        }
-    }
+//    @org.junit.jupiter.api.Test
+//    public void testListar(){
+//        ArrayList<Usuario> lista = Arquivo.listar();
+//        for(Usuario u : lista){
+//            System.out.println("login: "+u.getLogin());
+//            System.out.println("nome: "+u.getName());
+//            System.out.println("senha: "+u.getPassword());
+//            System.out.println(" ");
+//        }
+//    }
     
 }
