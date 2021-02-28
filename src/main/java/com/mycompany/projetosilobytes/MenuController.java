@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
 
 /**
  *
@@ -19,6 +20,9 @@ public class MenuController {
 
     @FXML
     private TextField inputPassword;
+    
+    @FXML
+    private Text erroText;
     
     @FXML
     private void cadastrarUsuario() throws IOException{
@@ -44,6 +48,8 @@ public class MenuController {
                 if(u.getPassword().equals(inputPassword.getText())){
                     App.setRoot("menuPrincipal");
                 }
+            }else{
+                erroText.setText("Email ou senha inválidos!");
             }
         }
         

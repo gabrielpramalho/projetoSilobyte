@@ -7,13 +7,22 @@ package com.mycompany.projetosilobytes;
 
 import java.io.IOException;
 import javafx.fxml.FXML;
+import javafx.scene.control.TextField;
 
 /**
  *
  * @author Gabriel
  */
-public class MenuPrincipalController {
+public class NovoAluguelController {
     
+    @FXML
+    private TextField inputName;
+
+    @FXML
+    private TextField inputDate;
+
+    @FXML
+    private TextField inputQtd;
     
     @FXML
     private void sair(){
@@ -21,12 +30,8 @@ public class MenuPrincipalController {
     }
     
     @FXML
-    private void novoAluguel() throws IOException{
-        App.setRoot("novoAluguel");
+    private void voltarMenu() throws IOException{
+        App.setRoot("menuPrincipal");
     }
     
-    @FXML
-    private void novoProdutor() throws IOException{
-        App.setRoot("novoProdutor");
-    }
 }

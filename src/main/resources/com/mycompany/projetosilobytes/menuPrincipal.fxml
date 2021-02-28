@@ -59,7 +59,7 @@
             <SeparatorMenuItem mnemonicParsing="false" />
             <MenuItem mnemonicParsing="false" text="Preferences…" />
             <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Quit" />
+            <MenuItem mnemonicParsing="false" onAction="#sair" text="Quit" />
           </items>
         </Menu>
         <Menu mnemonicParsing="false" text="Edit">
@@ -85,14 +85,28 @@
     </MenuBar>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
-        <Label alignment="CENTER" layoutX="259.0" layoutY="28.0" prefHeight="67.0" prefWidth="137.0" style="&#10;" text="SiloBytes" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+        <Label alignment="CENTER" layoutX="211.0" layoutY="27.0" prefHeight="67.0" prefWidth="233.0" style="&#10;" text="SiloBytes" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
           <font>
-            <Font size="18.0" />
+            <Font name="SansSerif Regular" size="24.0" />
           </font>
         </Label>
-            <Button layoutX="254.0" layoutY="128.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="147.0" text="Criar novo aluguel" />
-            <Button layoutX="254.0" layoutY="174.0" mnemonicParsing="false" text="Mostrar armazenamento" />
-            <Button layoutX="254.0" layoutY="221.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="147.0" text="Realizar pagamento" />
+            <Button layoutX="254.0" layoutY="155.0" mnemonicParsing="false" onAction="#novoAluguel" prefHeight="26.0" prefWidth="147.0" text="Criar novo aluguel">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font></Button>
+            <Button layoutX="254.0" layoutY="195.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="147.0" text="Mostrar armazenamento">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font></Button>
+            <Button layoutX="254.0" layoutY="235.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="147.0" text="Realizar pagamento">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font></Button>
+            <Button layoutX="254.0" layoutY="115.0" mnemonicParsing="false" onAction="#novoProdutor" prefHeight="26.0" prefWidth="147.0" text="Cadastrar Produtor">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font>
+            </Button>
       </children>
     </AnchorPane>
   </children>

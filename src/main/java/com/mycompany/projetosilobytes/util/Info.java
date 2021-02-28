@@ -8,4 +8,6 @@ package com.mycompany.projetosilobytes.util;
 
 public class Info {
     public static final String ARQUIVO_USUARIO = "C:\\projetoProg\\arquivo.dat";
+    public static final String ARQUIVO_PRODUTOR = "C:\\projetoProg\\arquivoProdutor.dat";
+    public static final String ARQUIVO_ALUGUEL = "C:\\projetoProg\\arquivoAluguel.dat";
 }
