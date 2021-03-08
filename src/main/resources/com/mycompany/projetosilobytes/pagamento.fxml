@@ -39,29 +39,21 @@
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.projetosilobytes.NovoAluguelController">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.projetosilobytes.PagamentoController">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
         <Menu mnemonicParsing="false" text="Menu">
           <items>
-            <MenuItem mnemonicParsing="false" text="Pagina Inicial" />
-            <MenuItem mnemonicParsing="false" text="Open…" />
-            <Menu mnemonicParsing="false" text="Open Recent" />
+            <MenuItem mnemonicParsing="false" onAction="#voltarMenu" text="Voltar" />
             <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Close" />
-            <MenuItem mnemonicParsing="false" text="Save" />
-            <MenuItem mnemonicParsing="false" text="Save As…" />
-            <MenuItem mnemonicParsing="false" text="Revert" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Preferences…" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Quit" />
+            <MenuItem mnemonicParsing="false" onAction="#sair" text="Sair" />
           </items>
         </Menu>
         <Menu mnemonicParsing="false" text="Edit">
@@ -85,45 +77,26 @@
         </Menu>
       </menus>
     </MenuBar>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="374.0" prefWidth="636.0" VBox.vgrow="ALWAYS">
       <children>
-        <Label alignment="CENTER" layoutX="267.0" layoutY="52.0" style="&#10;" text="Novo aluguel" textAlignment="CENTER" wrapText="false">
+        <Label alignment="CENTER" layoutX="274.0" layoutY="35.0" style="&#10;" text="Pagamento" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
           <font>
-            <Font name="SansSerif Regular" size="18.0" />
+            <Font size="18.0" />
           </font>
         </Label>
-            <TextField fx:id="inputName" layoutX="246.0" layoutY="131.0">
-               <font>
-                  <Font name="SansSerif Regular" size="12.0" />
-               </font>
-            </TextField>
-            <TextField fx:id="inputQtd" layoutX="246.0" layoutY="222.0">
-               <font>
-                  <Font name="SansSerif Regular" size="12.0" />
-               </font>
-            </TextField>
-            <Button layoutX="285.0" layoutY="269.0" mnemonicParsing="false" onAction="#cadastrarAluguel" text="Cadastrar">
-               <font>
-                  <Font name="SansSerif Regular" size="12.0" />
-               </font>
-            </Button>
-            <Label layoutX="116.0" layoutY="135.0" text="Nome do Produtor">
-               <font>
-                  <Font name="SansSerif Regular" size="12.0" />
-               </font>
-            </Label>
-            <Label layoutX="115.0" layoutY="178.0" text="Data de de entrada">
-               <font>
-                  <Font name="SansSerif Regular" size="12.0" />
-               </font>
-            </Label>
-            <Label layoutX="151.0" layoutY="226.0" text="Quantidade ">
-               <font>
-                  <Font name="SansSerif Regular" size="12.0" />
-               </font>
-            </Label>
-            <DatePicker fx:id="inputDate" layoutX="246.0" layoutY="173.0" prefHeight="26.0" prefWidth="150.0" />
-            <Label fx:id="txt" layoutX="487.0" layoutY="54.0" text="Mensagem de erro" textFill="RED" />
+            <TextField fx:id="inputID" layoutX="321.0" layoutY="102.0" prefHeight="26.0" prefWidth="73.0" />
+            <DatePicker fx:id="dateExit" layoutX="320.0" layoutY="161.0" />
+            <Label layoutX="323.0" layoutY="77.0" text="ID do Aluguel" />
+            <Label layoutX="323.0" layoutY="143.0" text="Data de Retirada" />
+            <Button layoutX="366.0" layoutY="207.0" mnemonicParsing="false" onAction="#calcular" text="Calcular" />
+            <Label layoutX="321.0" layoutY="284.0" prefHeight="18.0" prefWidth="46.0" text="Dias: " />
+            <Label layoutX="321.0" layoutY="257.0" prefHeight="18.0" prefWidth="118.0" text="Total a Pagar: R$" />
+            <Button layoutX="320.0" layoutY="312.0" mnemonicParsing="false" text="Confirmar Pagamento" />
+            <Button layoutX="478.0" layoutY="312.0" mnemonicParsing="false" text="Deixar em crédito" />
+            <Label fx:id="outPrice" layoutX="457.0" layoutY="257.0" prefHeight="18.0" prefWidth="74.0" />
+            <Label fx:id="outDays" layoutX="388.0" layoutY="284.0" prefHeight="18.0" prefWidth="38.0" />
+            <TextArea layoutX="22.0" layoutY="77.0" prefHeight="244.0" prefWidth="260.0" />
+            <Label layoutX="58.0" layoutY="26.0" text="Preço: R$20,00 a saca por dia" />
       </children>
     </AnchorPane>
   </children>

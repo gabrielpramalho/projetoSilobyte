@@ -98,7 +98,7 @@
                <font>
                   <Font name="SansSerif Regular" size="12.0" />
                </font></Button>
-            <Button layoutX="254.0" layoutY="235.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="147.0" text="Realizar pagamento">
+            <Button layoutX="254.0" layoutY="235.0" mnemonicParsing="false" onAction="#pagamento" prefHeight="26.0" prefWidth="147.0" text="Realizar pagamento">
                <font>
                   <Font name="SansSerif Regular" size="12.0" />
                </font></Button>

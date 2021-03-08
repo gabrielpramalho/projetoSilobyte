@@ -29,4 +29,9 @@ public class MenuPrincipalController {
     private void novoProdutor() throws IOException{
         App.setRoot("novoProdutor");
     }
+    
+    @FXML
+    private void pagamento() throws IOException{
+        App.setRoot("pagamento");
+    }
 }

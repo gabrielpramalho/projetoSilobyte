@@ -36,4 +36,15 @@ public class NovoProdutorController {
         ArquivoProdutor.inserir(p);
         App.setRoot("menuPrincipal");
     }
+    
+    @FXML
+    private void sair(){
+        System.exit(0);
+    }
+    
+    @FXML
+    private void voltarMenu() throws IOException{
+        App.setRoot("menuPrincipal");
+    }
+    
 }

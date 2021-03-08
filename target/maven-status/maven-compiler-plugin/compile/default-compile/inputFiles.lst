@@ -4,6 +4,7 @@ C:\Users\Gabriel\Documents\NetBeansProjects\projetoSiloBytes\src\main\java\com\m
 C:\Users\Gabriel\Documents\NetBeansProjects\projetoSiloBytes\src\main\java\com\mycompany\projetosilobytes\util\ArquivoProdutor.java
 C:\Users\Gabriel\Documents\NetBeansProjects\projetoSiloBytes\src\main\java\com\mycompany\projetosilobytes\util\Info.java
 C:\Users\Gabriel\Documents\NetBeansProjects\projetoSiloBytes\src\main\java\com\mycompany\projetosilobytes\MenuController.java
+C:\Users\Gabriel\Documents\NetBeansProjects\projetoSiloBytes\src\main\java\com\mycompany\projetosilobytes\models\Silo.java
 C:\Users\Gabriel\Documents\NetBeansProjects\projetoSiloBytes\src\main\java\com\mycompany\projetosilobytes\MenuPrincipalController.java
 C:\Users\Gabriel\Documents\NetBeansProjects\projetoSiloBytes\src\main\java\com\mycompany\projetosilobytes\models\Aluguel.java
 C:\Users\Gabriel\Documents\NetBeansProjects\projetoSiloBytes\src\main\java\com\mycompany\projetosilobytes\PrimaryController.java
@@ -13,4 +14,6 @@ C:\Users\Gabriel\Documents\NetBeansProjects\projetoSiloBytes\src\main\java\com\m
 C:\Users\Gabriel\Documents\NetBeansProjects\projetoSiloBytes\src\main\java\com\mycompany\projetosilobytes\models\Produtor.java
 C:\Users\Gabriel\Documents\NetBeansProjects\projetoSiloBytes\src\main\java\com\mycompany\projetosilobytes\App.java
 C:\Users\Gabriel\Documents\NetBeansProjects\projetoSiloBytes\src\main\java\com\mycompany\projetosilobytes\NovoAluguelController.java
+C:\Users\Gabriel\Documents\NetBeansProjects\projetoSiloBytes\src\main\java\com\mycompany\projetosilobytes\HistoricoArmazenamentoController.java
+C:\Users\Gabriel\Documents\NetBeansProjects\projetoSiloBytes\src\main\java\com\mycompany\projetosilobytes\PagamentoController.java
 C:\Users\Gabriel\Documents\NetBeansProjects\projetoSiloBytes\src\main\java\com\mycompany\projetosilobytes\util\Arquivo.java
