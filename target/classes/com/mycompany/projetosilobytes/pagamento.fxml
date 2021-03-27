@@ -38,9 +38,11 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
@@ -88,15 +90,19 @@
             <DatePicker fx:id="dateExit" layoutX="320.0" layoutY="161.0" />
             <Label layoutX="323.0" layoutY="77.0" text="ID do Aluguel" />
             <Label layoutX="323.0" layoutY="143.0" text="Data de Retirada" />
-            <Button layoutX="366.0" layoutY="207.0" mnemonicParsing="false" onAction="#calcular" text="Calcular" />
+            <Button layoutX="396.0" layoutY="321.0" mnemonicParsing="false" onAction="#calcular" text="Confirmar Pagamento" />
             <Label layoutX="321.0" layoutY="284.0" prefHeight="18.0" prefWidth="46.0" text="Dias: " />
             <Label layoutX="321.0" layoutY="257.0" prefHeight="18.0" prefWidth="118.0" text="Total a Pagar: R$" />
-            <Button layoutX="320.0" layoutY="312.0" mnemonicParsing="false" text="Confirmar Pagamento" />
-            <Button layoutX="478.0" layoutY="312.0" mnemonicParsing="false" text="Deixar em crédito" />
             <Label fx:id="outPrice" layoutX="457.0" layoutY="257.0" prefHeight="18.0" prefWidth="74.0" />
             <Label fx:id="outDays" layoutX="388.0" layoutY="284.0" prefHeight="18.0" prefWidth="38.0" />
             <TextArea layoutX="22.0" layoutY="77.0" prefHeight="244.0" prefWidth="260.0" />
             <Label layoutX="58.0" layoutY="26.0" text="Preço: R$20,00 a saca por dia" />
+            <RadioButton fx:id="credito" layoutX="494.0" layoutY="214.0" mnemonicParsing="false" text="Deixar em Crédito">
+               <toggleGroup>
+                  <ToggleGroup fx:id="grupo" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="pago" layoutX="318.0" layoutY="214.0" mnemonicParsing="false" selected="true" text="Confirmar Pagamento" toggleGroup="$grupo" />
       </children>
     </AnchorPane>
   </children>

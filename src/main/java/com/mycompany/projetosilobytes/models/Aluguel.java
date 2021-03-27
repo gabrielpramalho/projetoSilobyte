@@ -15,6 +15,7 @@ public class Aluguel implements Serializable{
     LocalDate dataInicial;
     Double qtd;
     String status;
+    Double valor;
 
     public Aluguel(int id, Produtor produtor, LocalDate dataInicial, Double qtd, String status) {
         this.id = id;
@@ -22,6 +23,7 @@ public class Aluguel implements Serializable{
         this.dataInicial = dataInicial;
         this.qtd = qtd;
         this.status = status;
+        this.valor = 0.0;
     }
 
     public Aluguel() {
@@ -46,6 +48,10 @@ public class Aluguel implements Serializable{
     public Double getQtd() {
         return qtd;
     }
+    
+    public Double getValor(){
+        return valor;
+    }
 
     public void setProdutor(Produtor produtor) {
         this.produtor = produtor;
@@ -66,6 +72,12 @@ public class Aluguel implements Serializable{
     public void setStatus(String status) {
         this.status = status;
     }
+
+    public void setValor(Double valor) {
+        this.valor = valor;
+    }
+    
+    
     
     
     

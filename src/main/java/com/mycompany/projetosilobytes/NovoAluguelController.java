@@ -34,10 +34,7 @@ public class NovoAluguelController {
     @FXML
     private Label txt;
     
-    
-    
-    //cadsastrar no arquivo
-    //mas antes configurar arquivo
+   
     
     @FXML
     private void sair(){
@@ -93,12 +90,10 @@ public class NovoAluguelController {
         }else{
             txt.setText("Deu erro");
         }
-        
-        
-            
+           
         }
         
-        
     }
+   
     
 }

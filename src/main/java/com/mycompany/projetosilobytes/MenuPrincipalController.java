@@ -34,4 +34,9 @@ public class MenuPrincipalController {
     private void pagamento() throws IOException{
         App.setRoot("pagamento");
     }
+    
+    @FXML
+    private void armazenamento() throws IOException{
+        App.setRoot("armazenamento");
+    }
 }

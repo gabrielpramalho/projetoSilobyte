@@ -9,7 +9,9 @@ import java.util.ArrayList;
 import javafx.fxml.FXML;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleGroup;
 
 /**
  *
@@ -32,8 +34,20 @@ public class PagamentoController {
     private Label txt;
     
     @FXML
-    private void calcular(){
+    private RadioButton credito;
+
+    @FXML
+    private RadioButton pago;
+    
+    @FXML
+    private ToggleGroup grupo;
+    
+    @FXML
+    private void calcular() throws IOException{
         ArrayList<Aluguel> lista = ArquivoAluguel.listar();
+        
+        RadioButton radio = (RadioButton) grupo.getSelectedToggle();
+        
         int id = Integer.parseInt(inputID.getText());
         
         int index = -1;
@@ -54,8 +68,17 @@ public class PagamentoController {
         String priceTotal = Double.toString(price);
         outDays.setText(days);
         outPrice.setText(priceTotal);
+        
+        
+        if (radio.getText().equals("Confirmar Pagamento")){
+            ArquivoAluguel.alterar(a, a.getId(), "Pago", price);
+            App.setRoot("menuPrincipal");
+        }else{
+            ArquivoAluguel.alterar(a, a.getId(), "Credito", price);
+            App.setRoot("menuPrincipal");
+        }
+ 
     }
-    
     
     
     

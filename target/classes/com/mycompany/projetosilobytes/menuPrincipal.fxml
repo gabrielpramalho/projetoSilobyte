@@ -94,7 +94,7 @@
                <font>
                   <Font name="SansSerif Regular" size="12.0" />
                </font></Button>
-            <Button layoutX="254.0" layoutY="195.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="147.0" text="Mostrar armazenamento">
+            <Button layoutX="254.0" layoutY="195.0" mnemonicParsing="false" onAction="#armazenamento" prefHeight="26.0" prefWidth="147.0" text="Mostrar armazenamento">
                <font>
                   <Font name="SansSerif Regular" size="12.0" />
                </font></Button>

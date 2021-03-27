@@ -103,7 +103,9 @@ public class ArquivoTest {
                 System.out.println("Quantidade: "+u.getQtd());
                 System.out.println("Data de Entrada: "+u.getDataInicial());
                 System.out.println("Status: "+u.getStatus());
+                System.out.println("Valor: "+u.getValor());
                 System.out.println(" ");
+                
             }
         }
     

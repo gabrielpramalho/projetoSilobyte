@@ -50,7 +50,7 @@
       <menus>
         <Menu mnemonicParsing="false" text="Menu">
           <items>
-            <MenuItem mnemonicParsing="false" text="Pagina Inicial" />
+            <MenuItem mnemonicParsing="false" onAction="#voltarMenu" text="Pagina Inicial" />
             <MenuItem mnemonicParsing="false" text="Open…" />
             <Menu mnemonicParsing="false" text="Open Recent" />
             <SeparatorMenuItem mnemonicParsing="false" />
