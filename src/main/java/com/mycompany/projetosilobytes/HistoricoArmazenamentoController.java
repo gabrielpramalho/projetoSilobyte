@@ -8,6 +8,7 @@ package com.mycompany.projetosilobytes;
 import com.mycompany.projetosilobytes.models.Aluguel;
 import com.mycompany.projetosilobytes.util.ArquivoAluguel;
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import javafx.fxml.FXML;
@@ -26,12 +27,14 @@ public class HistoricoArmazenamentoController {
         clear();
         ArrayList<Aluguel> lista = ArquivoAluguel.listar();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        DecimalFormat df = new DecimalFormat("###,###.00");
         
         for(Aluguel a:lista){
             if(a.getStatus().equals("Pago")){
                 String dtFormatado = a.getDataInicial().format(formatter);
                 inputElements.appendText("ID: "+a.getId()+"  Nome: "+a.getProdutor().getName()+"    ");
-                inputElements.appendText("Data"+dtFormatado+"\n\n");
+                inputElements.appendText("Valor: R$ "+df.format(a.getValor())+"    ");
+                inputElements.appendText("Data: "+dtFormatado+"\n\n");
             }
         }
     }
@@ -55,11 +58,13 @@ public class HistoricoArmazenamentoController {
         clear();
         ArrayList<Aluguel> lista = ArquivoAluguel.listar();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        DecimalFormat df = new DecimalFormat("###,###.00");
         
         for(Aluguel a:lista){
             if(a.getStatus().equals("Credito")){
                 String dtFormatado = a.getDataInicial().format(formatter);
                 inputElements.appendText("ID: "+a.getId()+"  Nome: "+a.getProdutor().getName()+"    ");
+                inputElements.appendText("Valor: R$ "+df.format(a.getValor())+"    ");
                 inputElements.appendText("Data: "+dtFormatado+"\n\n");
             }
         }

@@ -6,6 +6,7 @@ import com.mycompany.projetosilobytes.util.Arquivo;
 import java.io.IOException;
 import java.util.ArrayList;
 import javafx.fxml.FXML;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 
@@ -19,7 +20,7 @@ public class MenuController {
     private TextField inputLogin;
 
     @FXML
-    private TextField inputPassword;
+    private PasswordField inputPassword;
     
     @FXML
     private Text erroText;

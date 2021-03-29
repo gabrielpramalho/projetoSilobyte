@@ -4,12 +4,14 @@ package com.mycompany.projetosilobytes;
 import com.mycompany.projetosilobytes.models.Aluguel;
 import com.mycompany.projetosilobytes.util.ArquivoAluguel;
 import java.io.IOException;
+import java.time.format.DateTimeFormatter;
 import static java.time.temporal.ChronoUnit.DAYS;
 import java.util.ArrayList;
 import javafx.fxml.FXML;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
 
@@ -43,6 +45,12 @@ public class PagamentoController {
     private ToggleGroup grupo;
     
     @FXML
+    private TextArea inputElements;
+    
+    @FXML
+    private Label result;
+    
+    @FXML
     private void calcular() throws IOException{
         ArrayList<Aluguel> lista = ArquivoAluguel.listar();
         
@@ -72,19 +80,41 @@ public class PagamentoController {
         
         if (radio.getText().equals("Confirmar Pagamento")){
             ArquivoAluguel.alterar(a, a.getId(), "Pago", price);
-            App.setRoot("menuPrincipal");
+            result.setText("Pagamento efetuado!");
         }else{
             ArquivoAluguel.alterar(a, a.getId(), "Credito", price);
-            App.setRoot("menuPrincipal");
+            result.setText("Pagamento efetuado!");
         }
  
+        
+        
+       
     }
     
+    @FXML
+    private void listar(){
+        clear();
+        ArrayList<Aluguel> lista = ArquivoAluguel.listar();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        
+        for(Aluguel a:lista){
+            if(a.getStatus().equals("Em aberto")){
+                String dtFormatado = a.getDataInicial().format(formatter);
+                inputElements.appendText("ID: "+a.getId()+"  Nome: "+a.getProdutor().getName()+"    ");
+                inputElements.appendText("Data: "+dtFormatado+"\n\n");
+            }
+        }
+    }
     
     
     @FXML
     private void sair(){
         System.exit(0);
+    }
+    
+    @FXML
+    private void clear(){
+        inputElements.setText("");
     }
     
     @FXML
